@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491DB5AD286DB18000CBEF43 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 491DB5AC286DB18000CBEF43 /* Readme.md */; };
 		49E2C702286C506000E93C48 /* demoLoginScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2C701286C506000E93C48 /* demoLoginScreenApp.swift */; };
 		49E2C704286C506000E93C48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2C703286C506000E93C48 /* ContentView.swift */; };
 		49E2C706286C506200E93C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E2C705286C506200E93C48 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		491DB5AC286DB18000CBEF43 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		49E2C6FE286C506000E93C48 /* demoLoginScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoLoginScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E2C701286C506000E93C48 /* demoLoginScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoLoginScreenApp.swift; sourceTree = "<group>"; };
 		49E2C703286C506000E93C48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 		49E2C6F5286C506000E93C48 = {
 			isa = PBXGroup;
 			children = (
+				491DB5AC286DB18000CBEF43 /* Readme.md */,
 				49E2C700286C506000E93C48 /* demoLoginScreen */,
 				49E2C6FF286C506000E93C48 /* Products */,
 			);
@@ -130,6 +133,7 @@
 			files = (
 				49E2C709286C506200E93C48 /* Preview Assets.xcassets in Resources */,
 				49E2C706286C506200E93C48 /* Assets.xcassets in Resources */,
+				491DB5AD286DB18000CBEF43 /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
