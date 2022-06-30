@@ -11,6 +11,9 @@ struct LoginScreenView: View {
     @State var username = ""
     @State var password = ""
     @State var displayLoginSection = false
+    @AppStorage("loggedIn") var authenticated: Bool?
+    @AppStorage("lastAuthenticationSuccessDate") var lastAuthenticationSuccessDate: Date?
+    @State var loginError = false
     
     var body: some View {
         ZStack {
@@ -52,9 +55,12 @@ struct LoginScreenView: View {
                     
                     if username != "" && password != "" {
                         Button {
-                            
+                            processFormLogin()
                         } label: {
                             Text("Login")
+                        }
+                        .alert("Error login in", isPresented: $loginError) {
+                            Button("ok") { }
                         }
                         .padding(.top)
                     }
@@ -66,6 +72,15 @@ struct LoginScreenView: View {
         }
         .foregroundColor(.white)
     }
+    
+fileprivate func processFormLogin() {
+    if username == "John" && password == "password" {
+        authenticated = true
+        lastAuthenticationSuccessDate = Date()
+    } else {
+        loginError = true
+    }
+}
 }
 
 struct PlaceholderStyle: ViewModifier {
